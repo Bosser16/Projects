@@ -1,0 +1,201 @@
+
+:root{
+    /*     COLOR PALETTE     */
+    --pickle: rgb(231 219 193);
+    --border: rgb(89 124 22);
+    --title: rgb(204 236 151);
+}
+
+nav{
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--pickle);
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+
+#header{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    background-image: url(./images/campus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    height: 350px;
+    padding: 10px;
+}
+
+#header h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#header p{
+    margin:0;
+}
+
+.Header-Portrait{
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    border: solid 5px rgb(91, 90, 90);
+}
+
+.sub-title{
+    color: black;
+    font-style: italic;
+    padding: 5px;
+    box-shadow: 0px 0px 30px 30px var(--pickle);
+
+}
+
+#education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Ed-Card{
+    display: flex;
+    flex-direction: column;
+    border: solid var(--border) 5px;
+    background-color: white;
+    min-width: 350px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+.Ed-Element{
+    margin: 3px;
+    color: black;
+}
+
+.Ed-Card-Title{
+    background-color: var(--title);
+    border-radius: 5px 5px 0 0;
+}
+
+.School-Logo{
+    width: 200px;
+    align-self: center;
+}
+
+#experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Exp-Card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 350px;
+    width: 700px;
+    border-radius: 10px 10px 10px 10px;
+    border: solid var(--border) 5px;
+    margin: 10px;
+}
+
+.Exp-Element{
+    margin: 1px;
+    padding: 5px;
+}
+
+.Exp-Logo{
+    border-radius: 5px 5px 0 0;
+    height: 500px;
+}
+
+#tech{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.Tech-Backdrop{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(100, 100, 100);
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.Tech-Link{
+    position: absolute;
+    border-radius: 50%;
+    top: -5px;
+    bottom: 0;
+    left: -5px;
+    right: 0;
+}
+
+.Tech-Card{
+    border: solid var(--border) 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% 58%;
+    background-color: white;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+}
+
+.Tech-Hover-Title{
+    color: white;
+    align-self: center;
+}
+
+
+.Tech-Title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to top,
+        var(--title) 20%,
+        transparent 20% 80%
+        );
+}
+
+.Tech-Element{
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: flex-end;
+    height: 95%;
+    width: 100%;
+}
